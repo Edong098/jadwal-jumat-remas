@@ -35,47 +35,6 @@ Dapat diakses melalui URL `/admin/login` dengan sistem keamanan kata sandi.
 
 ---
 
-## 🚀 Panduan Instalasi (Local Development)
 
-Jika Anda ingin menjalankan atau memodifikasi kode ini di komputer lokal:
-
-1. **Clone repositori ini:**
-   ```bash
-   git clone https://github.com/USERNAME_ANDA/jadwal-jumat-remas.git
-   cd jadwal-jumat-remas
-   ```
-
-2. **Install dependensi:**
-   ```bash
-   npm install
-   ```
-
-3. **Atur Environment Variables:**
-   Buat file `.env` di folder utama dan tambahkan link Google Apps Script Anda:
-   ```env
-   VITE_APPS_SCRIPT_URL=https://script.google.com/macros/s/LINK_SCRIPT_ANDA/exec
-   ```
-
-4. **Jalankan server lokal:**
-   ```bash
-   npm run dev
-   ```
-   Aplikasi dapat diakses di `http://localhost:5173`
-
----
-
-## ☁️ Panduan Deployment ke Vercel
-
-1. Login ke [Vercel](https://vercel.com).
-2. Pilih **Add New... > Project**.
-3. Import repositori GitHub ini.
-4. Pada bagian **Environment Variables**, tambahkan:
-   - **Name:** `VITE_APPS_SCRIPT_URL`
-   - **Value:** `[Tautan Web App Google Apps Script Anda]`
-5. Klik **Deploy**.
-
-Sistem _Routing_ sudah ditangani oleh file `vercel.json` bawaan agar semua halaman bisa di-refresh tanpa kendala *(Error 404)*.
-
----
 
 *Dibuat untuk Masjid Nurul Huda Kencong.*
