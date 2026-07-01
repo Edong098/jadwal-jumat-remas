@@ -134,7 +134,7 @@ const Home = () => {
         <div className="pt-12">
           <div className="text-center mb-10">
             <h2 className="text-3xl md:text-4xl font-extrabold text-primary-900 mb-4 tracking-tight uppercase">Jadwal Jumat 2026</h2>
-            <p className="text-sm sm:text-base md:text-lg text-slate-600 max-w-3xl mx-auto px-4 leading-relaxed">
+            <p className="text-lg text-slate-600 leading-relaxed text-justify max-w-3xl mx-auto px-4">
               Berikut adalah jadwal resmi petugas Sholat Jumat di Masjid Nurul Huda Kencong. Data ini dipublikasikan oleh pengurus masjid untuk memudahkan para jamaah dan petugas.
             </p>
           </div>
@@ -173,9 +173,6 @@ const Home = () => {
           </div>
         </div>
       </section>
-
-
-
     </div>
   );
 };
