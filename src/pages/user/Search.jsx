@@ -28,14 +28,14 @@ const Search = () => {
 
           // Cek Khotib dan Imam (jika sama, gabung)
           if (schedule.khotib === schedule.imam && schedule.khotib) {
-            pushRole(schedule.khotib, "Khotib & Imam", "12:15 WIB", schedule.tanggal, statusLabel);
+            pushRole(schedule.khotib, "Khotib & Imam", "11:30 WIB", schedule.tanggal, statusLabel);
           } else {
-            pushRole(schedule.khotib, "Khotib", "12:15 WIB", schedule.tanggal, statusLabel);
-            pushRole(schedule.imam, "Imam", "12:15 WIB", schedule.tanggal, statusLabel);
+            pushRole(schedule.khotib, "Khotib", "11:30 WIB", schedule.tanggal, statusLabel);
+            pushRole(schedule.imam, "Imam", "11:30 WIB", schedule.tanggal, statusLabel);
           }
 
-          pushRole(schedule.muadzin1, "Muadzin I", "11:50 WIB", schedule.tanggal, statusLabel);
-          pushRole(schedule.muadzin2, "Muadzin II", "11:50 WIB", schedule.tanggal, statusLabel);
+          pushRole(schedule.muadzin1, "Muadzin I", "11:30 WIB", schedule.tanggal, statusLabel);
+          pushRole(schedule.muadzin2, "Muadzin II", "11:30 WIB", schedule.tanggal, statusLabel);
         });
 
         // Grouping berdasarkan Nama dan Tugas

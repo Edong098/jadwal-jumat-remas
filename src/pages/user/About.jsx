@@ -9,7 +9,7 @@ const About = () => {
         {/* Header */}
         <div className="text-center mb-14 relative animate-slide-up flex flex-col items-center">
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-64 h-64 bg-primary-100 rounded-full blur-3xl opacity-50 -z-10"></div>
-          <h1 className="text-4xl md:text-5xl font-extrabold text-slate-900 mb-6 tracking-tight uppercase">Tentang Masjid</h1>
+          <h1 className="text-4xl md:text-5xl font-extrabold text-slate-900 mb-6 tracking-tight uppercase">Tentang Website</h1>
           <p className="text-lg md:text-xl text-slate-600 leading-relaxed max-w-3xl mx-auto text-center">
             Website ini dibuat untuk membantu petugas dan pengurus Masjid Nurul Huda Kencong dalam melihat jadwal petugas Sholat Jumat secara mudah, cepat, dan akurat. Website juga menyediakan fasilitas pelaporan apabila petugas berhalangan hadir sehingga pengurus dapat segera melakukan tindak lanjut.
           </p>
@@ -20,22 +20,24 @@ const About = () => {
           <div className="bg-gradient-to-br from-primary-600 to-primary-800 rounded-[32px] p-8 md:p-10 shadow-xl shadow-primary-500/20 text-white hover:-translate-y-1 transition-transform">
             <h3 className="text-3xl md:text-4xl font-extrabold text-white mb-6 pb-4 border-b-2 border-white/20 uppercase tracking-wide">Jadwal Selalu Terupdate</h3>
             <p className="text-white/90 text-lg md:text-xl leading-relaxed text-justify">
-              Jadwal petugas akan updat tiap minggunya sesuai dengan jadwal yang sudah dibuat. Setiap perubahan jadwal akan otomatis ditampilkan pada website tanpa perlu melakukan pembaruan aplikasi.
+              Jadwal petugas akan updat tiap minggunya sesuai dengan jadwal yang sudah dibuat. Setiap perubahan jadwal akan otomatis ditampilkan pada website.
             </p>
           </div>
 
           <div className="bg-gradient-to-br from-primary-600 to-primary-800 rounded-[32px] p-8 md:p-10 shadow-xl shadow-primary-500/20 text-white hover:-translate-y-1 transition-transform">
             <h3 className="text-3xl md:text-4xl font-extrabold text-white mb-6 pb-4 border-b-2 border-white/20 uppercase tracking-wide">Pelaporan Tidak Hadir</h3>
             <p className="text-white/90 text-lg md:text-xl leading-relaxed text-justify">
-              Petugas dapat mengirim laporan ketidakhadiran melalui website. Setiap laporan akan diterima oleh admin untuk ditinjau. Admin dapat menyetujui, menolak, atau memberikan catatan terhadap laporan tersebut.
+              Petugas dapat mengirim laporan ketidakhadiran melalui website. Setiap laporan akan diterima oleh admin.
             </p>
           </div>
         </div>
 
         {/* Lokasi Masjid */}
         <div className="bg-white rounded-[24px] p-6 shadow-sm border border-slate-100 overflow-hidden">
-          <h2 className="text-3xl md:text-4xl font-extrabold text-slate-900 mb-2 pl-4 border-l-4 border-primary-500">Lokasi Masjid</h2>
-          <p className="text-slate-600 text-lg mb-8 pl-5">Panduan peta untuk mempermudah Anda menemukan lokasi masjid kami.</p>
+          <div className="text-center mb-8">
+            <h2 className="text-3xl md:text-4xl font-extrabold text-slate-900 mb-2">Lokasi Masjid</h2>
+            <p className="text-slate-600 text-lg">Panduan peta untuk mempermudah Anda menemukan lokasi masjid kami.</p>
+          </div>
           <div className="w-full h-80 bg-slate-200 rounded-2xl overflow-hidden mb-6 relative shadow-inner">
             <iframe
               title="Google Maps Lokasi Masjid"
@@ -53,7 +55,7 @@ const About = () => {
           <div className="flex flex-col md:flex-row justify-between items-start md:items-center p-4 bg-slate-50 rounded-xl">
             <div className="mb-4 md:mb-0">
               <h4 className="text-xl font-bold text-slate-900 mb-1">Masjid Nurul Huda Kencong</h4>
-              <p className="text-slate-600 text-lg">Desa Kencong, Kecamatan Tanjung</p>
+              <p className="text-slate-600 text-lg">Dusun Kencong, Desa Sokong, Kecamatan Tanjung</p>
               <p className="text-slate-600 text-lg">Kabupaten Lombok Utara, Nusa Tenggara Barat</p>
             </div>
             <a

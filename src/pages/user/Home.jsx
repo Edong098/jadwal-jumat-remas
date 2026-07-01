@@ -133,9 +133,9 @@ const Home = () => {
         {/* All Schedules Table Section */}
         <div className="pt-12">
           <div className="text-center mb-10">
-            <h2 className="text-3xl md:text-4xl font-extrabold text-slate-900 mb-4 tracking-tight uppercase">Jadwal Jumat 2026</h2>
-            <p className="text-lg text-slate-600 max-w-2xl mx-auto">
-              Daftar lengkap jadwal pelaksanaan Sholat Jumat yang terdaftar di sistem.
+            <h2 className="text-3xl md:text-4xl font-extrabold text-primary-900 mb-4 tracking-tight uppercase">Jadwal Jumat 2026</h2>
+            <p className="text-sm sm:text-base md:text-lg text-slate-600 max-w-3xl mx-auto px-4 leading-relaxed">
+              Berikut adalah jadwal resmi petugas Sholat Jumat di Masjid Nurul Huda Kencong. Data ini dipublikasikan oleh pengurus masjid untuk memudahkan para jamaah dan petugas. Khotib dan petugas lainnya Hadir 11:30 WIB.
             </p>
           </div>
 
@@ -148,7 +148,7 @@ const Home = () => {
               <div className="overflow-x-auto w-full pb-2">
                 <table className="w-full min-w-max text-left border-collapse">
                   <thead>
-                    <tr className="bg-primary-50 border-b border-primary-100 text-xs sm:text-sm font-bold text-primary-900 uppercase tracking-wider">
+                    <tr className="bg-primary-50 border-b border-primary-100 text-base sm:text-lg md:text-xl font-extrabold text-primary-900 uppercase tracking-wider">
                       <th className="p-3 sm:p-4 md:p-5 whitespace-nowrap">Tanggal</th>
                       <th className="p-3 sm:p-4 md:p-5 whitespace-nowrap">Muadzin I</th>
                       <th className="p-3 sm:p-4 md:p-5 whitespace-nowrap">Muadzin II</th>
@@ -158,12 +158,12 @@ const Home = () => {
                   </thead>
                   <tbody className="divide-y divide-slate-100">
                     {allSchedules.map((item, index) => (
-                      <tr key={index} className="hover:bg-slate-50 transition-colors">
-                        <td className="p-3 sm:p-4 md:p-5 text-sm sm:text-base font-bold text-slate-900 whitespace-nowrap">{item.tanggal}</td>
-                        <td className="p-3 sm:p-4 md:p-5 text-sm sm:text-base font-bold text-slate-900 whitespace-nowrap">{item.muadzin1}</td>
-                        <td className="p-3 sm:p-4 md:p-5 text-sm sm:text-base font-bold text-slate-900 whitespace-nowrap">{item.muadzin2}</td>
-                        <td className="p-3 sm:p-4 md:p-5 text-sm sm:text-base font-bold text-slate-900 whitespace-nowrap">{item.khotib}</td>
-                        <td className="p-3 sm:p-4 md:p-5 text-sm sm:text-base font-bold text-slate-900 whitespace-nowrap">{item.imam}</td>
+                      <tr key={index} className="hover:bg-primary-900 group transition-colors duration-300">
+                        <td className="p-3 sm:p-4 md:p-5 text-sm sm:text-base font-bold text-primary-900 group-hover:text-white whitespace-nowrap transition-colors">{item.tanggal}</td>
+                        <td className="p-3 sm:p-4 md:p-5 text-sm sm:text-base font-bold text-primary-900 group-hover:text-white whitespace-nowrap transition-colors">{item.muadzin1}</td>
+                        <td className="p-3 sm:p-4 md:p-5 text-sm sm:text-base font-bold text-primary-900 group-hover:text-white whitespace-nowrap transition-colors">{item.muadzin2}</td>
+                        <td className="p-3 sm:p-4 md:p-5 text-sm sm:text-base font-bold text-primary-900 group-hover:text-white whitespace-nowrap transition-colors">{item.khotib}</td>
+                        <td className="p-3 sm:p-4 md:p-5 text-sm sm:text-base font-bold text-primary-900 group-hover:text-white whitespace-nowrap transition-colors">{item.imam}</td>
                       </tr>
                     ))}
                   </tbody>
