@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { createPortal } from 'react-dom';
 import { NavLink, useLocation, useNavigate } from 'react-router-dom';
 import { 
   LayoutDashboard, 
@@ -84,8 +85,8 @@ const Sidebar = ({ onClose }) => {
       </div>
 
       {/* Floating Alert Logout */}
-      {showLogoutConfirm && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center bg-slate-900/40 backdrop-blur-sm">
+      {showLogoutConfirm && createPortal(
+        <div className="fixed inset-0 z-[100] flex items-center justify-center bg-slate-900/40 backdrop-blur-sm">
           <div className="bg-white rounded-2xl shadow-xl border border-slate-100 p-6 w-[90%] max-w-sm">
             <div className="flex flex-col items-center text-center mb-6">
               <div className="w-12 h-12 rounded-full bg-red-100 flex items-center justify-center mb-4">
@@ -111,7 +112,8 @@ const Sidebar = ({ onClose }) => {
               </button>
             </div>
           </div>
-        </div>
+        </div>,
+        document.body
       )}
     </div>
   );
