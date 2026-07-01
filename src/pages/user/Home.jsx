@@ -90,7 +90,7 @@ const Home = () => {
         ) : (
           <>
             <div>
-              <h2 className="text-3xl font-bold text-slate-900 mb-6 border-l-4 border-primary-500 pl-4">Jadwal Minggu Ini</h2>
+              <h2 className="text-2xl font-bold text-slate-900 mb-6 border-l-4 border-primary-500 pl-4">Jadwal Minggu Ini</h2>
               {scheduleThisWeek ? (
                 <ScheduleCard
                   title="Minggu Ini"
@@ -109,7 +109,7 @@ const Home = () => {
             </div>
 
             <div>
-              <h2 className="text-3xl font-bold text-slate-900 mb-6 border-l-4 border-secondary-500 pl-4">Jadwal Minggu Depan</h2>
+              <h2 className="text-2xl font-bold text-slate-900 mb-6 border-l-4 border-secondary-500 pl-4">Jadwal Minggu Depan</h2>
               {scheduleNextWeek ? (
                 <ScheduleCard
                   title="Minggu Depan"
@@ -135,7 +135,7 @@ const Home = () => {
           <div className="text-center mb-10">
             <h2 className="text-3xl md:text-4xl font-extrabold text-primary-900 mb-4 tracking-tight uppercase">Jadwal Jumat 2026</h2>
             <p className="text-sm sm:text-base md:text-lg text-slate-600 max-w-3xl mx-auto px-4 leading-relaxed">
-              Berikut adalah jadwal resmi petugas Sholat Jumat di Masjid Nurul Huda Kencong. Data ini dipublikasikan oleh pengurus masjid untuk memudahkan para jamaah dan petugas. Khotib dan petugas lainnya Hadir 11:30 WIB.
+              Berikut adalah jadwal resmi petugas Sholat Jumat di Masjid Nurul Huda Kencong. Data ini dipublikasikan oleh pengurus masjid untuk memudahkan para jamaah dan petugas.
             </p>
           </div>
 
